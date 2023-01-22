@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core'
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {User} from "../../shared/interfaces";
-import {AuthService} from "../shared/services/auth.service";
-import {Router} from "@angular/router";
+import {User} from '../../shared/interfaces';
+import {AuthService} from '../shared/services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -10,8 +10,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  // ошибка при инициализации, мб из-за версий
+
   form: FormGroup
+  submitted = false
 
   constructor(
     private auth: AuthService,
@@ -36,6 +37,7 @@ export class LoginPageComponent implements OnInit {
     if (this.form.invalid) {
       return
     }
+    this.submitted = true
     const user: User = {
       email: this.form.value.email,
       password: this.form.value.password
@@ -44,6 +46,7 @@ export class LoginPageComponent implements OnInit {
     this.auth.login(user).subscribe(() => {
       this.form.reset()
       this.router.navigate(['/admin', 'dashboard'])
+      this.submitted = false
     })
   }
 }
