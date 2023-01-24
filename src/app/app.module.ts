@@ -1,4 +1,4 @@
-import {NgModule, Provider} from '@angular/core';
+import {NgModule, Provider, isDevMode} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,14 +12,17 @@ import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {AuthInterceptor} from "./shared/auth.interceptor";
 import {registerLocaleData} from "@angular/common";
 import ruLocale from "@angular/common/locales/ru";
+import {environment} from '../environments/environment';
+import {ServiceWorkerModule} from '@angular/service-worker';
 
-registerLocaleData(ruLocale, 'ru')
+registerLocaleData(ruLocale, 'ru');
+
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
   multi: true,
   useClass: AuthInterceptor
-}
+};
 
 @NgModule({
   declarations: [
@@ -32,9 +35,11 @@ const INTERCEPTOR_PROVIDER: Provider = {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [INTERCEPTOR_PROVIDER],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
