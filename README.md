@@ -1,27 +1,23 @@
 # Blog
+A simple blog with the ability to:
+- see the posts as user
+- create, update and delete posts as admin
+
+Technologies:
+
+Angular
+TypeScript
+JavaScript
+HTML
+CSS/SCSS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+![image](https://user-images.githubusercontent.com/94639350/214337020-1370fc7a-14d9-4dfc-bf0f-7c4f529e5c64.png)
+![image](https://user-images.githubusercontent.com/94639350/214336421-0d762b0d-cae9-4663-b9f5-ddf476ccacc8.png)
+![image](https://user-images.githubusercontent.com/94639350/214336188-884bc611-1d53-4a29-85d9-69c8708b0bc5.png)
+![image](https://user-images.githubusercontent.com/94639350/214336661-344eea4e-0bb0-45ed-9c0c-cd35966b7f97.png)
+![image](https://user-images.githubusercontent.com/94639350/214336746-89a9dbb1-db5c-44c9-b82a-d7c0ec7150d9.png)
+![image](https://user-images.githubusercontent.com/94639350/214336346-2ea31be6-7812-4d36-86e7-a54f78d35100.png)
+![image](https://user-images.githubusercontent.com/94639350/214336911-189019fd-3e8c-47c8-828d-6e73a35cb5f6.png)
+![image](https://user-images.githubusercontent.com/94639350/214337209-9bd84800-4286-4de8-a90a-cfa5a4d20b06.png)
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
