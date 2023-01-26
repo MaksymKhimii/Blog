@@ -4,13 +4,12 @@ A simple blog with the ability to:
 - create, update and delete posts as admin
 
 Technologies:
-
-Angular
-TypeScript
-JavaScript
-HTML
-CSS/SCSS
-Realtime Database and hosting from firebase
+- Angular
+- TypeScript
+- JavaScript
+- HTML
+- CSS/SCSS
+- Realtime Database and hosting from firebase
 
 You can find this app using next links:
 - for user -> https://blog-c718a.web.app
