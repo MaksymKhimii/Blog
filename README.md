@@ -11,6 +11,10 @@ JavaScript
 HTML
 CSS/SCSS
 
+You can find this app using next links:
+- for user -> https://blog-c718a.web.app
+- for admin -> https://blog-c718a.web.app/admin
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 ![image](https://user-images.githubusercontent.com/94639350/214337020-1370fc7a-14d9-4dfc-bf0f-7c4f529e5c64.png)
 ![image](https://user-images.githubusercontent.com/94639350/214336421-0d762b0d-cae9-4663-b9f5-ddf476ccacc8.png)
