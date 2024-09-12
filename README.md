@@ -11,9 +11,9 @@ Technologies:
 - CSS/SCSS
 - Realtime Database and hosting from firebase
 
-You can find this app using next links:
+You can find this app using next links(could be inactive due to term of using free firebase):
 - for user -> https://blog-c718a.web.app
-- for admin -> https://blog-c718a.web.app/admin
+- for admin -> https://blog-c718a.web.app/admin 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 ![image](https://user-images.githubusercontent.com/94639350/214337020-1370fc7a-14d9-4dfc-bf0f-7c4f529e5c64.png)
